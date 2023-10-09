@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+@layer base {
+  :root {
+    --color-white: 0deg 0% 100%;
+
+    --color-brand-background: 0deg 0% 97%;
+    --color-brand-black-hue: 0deg 0% 13%;
+    --color-brand-black-tint: 0deg 0% 20%;
+    --color-brand-black-tone: 0deg 0% 27%;
+
+    --color-neutral-50: 0deg 0% 95%;
+    --color-neutral-100: 0deg 0% 89%;
+    --color-neutral-200: 0deg 0% 79%;
+    --color-neutral-300: 0deg 0% 68%;
+    --color-neutral-400: 0deg 0% 57%;
+    --color-neutral-500: 0deg 0% 47%;
+    --color-neutral-600: 0deg 0% 37%;
+    --color-neutral-700: 0deg 0% 28%;
+    --color-neutral-800: 0deg 0% 19%;
+    --color-neutral-900: 0deg 0% 9%;
+    --color-neutral-950: 0deg 0% 5%;
+
+    --color-primary-50: 222deg 55% 94%;
+    --color-primary-100: 222deg 54% 88%;
+    --color-primary-200: 222deg 54% 76%;
+    --color-primary-300: 222deg 54% 64%;
+    --color-primary-400: 222deg 54% 53%;
+    --color-primary-500: 222deg 54% 41%;
+    --color-primary-600: 222deg 54% 33%;
+    --color-primary-700: 222deg 54% 24%;
+    --color-primary-800: 222deg 54% 16%;
+    --color-primary-900: 221deg 55% 8%;
+    --color-primary-950: 224deg 52% 4%;
+  }
+}
+
+.theme-light {
+  --neutralBg: var(--color-white);
+  --neutralText: var(--color-brand-black-hue);
+  --onNeutralBg: var(--color-neutral-900);
+  --onNeutralText: var(--color-white);
+  --primary: var(--color-primary-500);
+  --primaryActive: var(--color-primary-400);
+  --primaryBg: var(--color-brand-background);
+  --primaryText: var(--color-primary-700);
+  --primaryTextNeutral: var(--color-primary-800);
+  --primaryTextHover: var(--color-primary-900);
+  --onPrimaryBg: var(--color-primary-900);
+  --onPrimaryText: var(--color-primary-100);
+  --ringColor: var(--color-neutral-100);
+  --onRingColor: var(--color-neutral-200);
+}
+
+.theme-dark {
+  --neutralBg: var(--color-neutral-900);
+  --neutralText: var(--color-white);
+  --onNeutralBg: var(--color-white);
+  --onNeutralText: var(--color-brand-black-hue);
+  --primary: var(--color-primary-50);
+  --primaryActive: var(--color-primary-300);
+  --primaryBg: var(--color-primary-900);
+  --primaryText: var(--color-primary-50);
+  --primaryTextNeutral: var(--color-primary-100);
+  --primaryTextHover: var(--color-primary-200);
+  --onPrimaryBg: var(--color-brand-background);
+  --onPrimaryText: var(--color-primary-500);
+  --ringColor: var(--color-neutral-700);
+  --onRingColor: var(--color-neutral-500);
+}
